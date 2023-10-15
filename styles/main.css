@@ -1,0 +1,176 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+
+:root {
+  --color-font: #3d3e40;
+  --color-primary: #73205a;      /* dark magenta */
+  --color-secondary: #516696;    /* cool navy */
+  --color-accent-1: #b4529c;       /* magenta */
+  --color-accent-2: #4a417b; /* purple navy */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here *****************/
+
+body{
+  font-family: 'Hind', sans-serif;
+  color: var(--color-font);
+  font-size: 2rem;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  margin-top:0.5em;
+}
+
+h1{
+  color:var(--color-primary);
+  font-size: 6rem;
+}
+
+h2{
+  color:var(--color-secondary);
+  font-size: 4rem;
+}
+
+h3{
+  color:var(--color-accent-1);
+  font-size: 3rem;
+}
+
+h4{
+  color:var(--color-accent-2);
+  font-size: 2rem;
+}
+
+a{
+  color:var(--color-accent-1);
+  text-decoration: none;
+}
+
+a:hover{
+  color:var(--color-accent-2);
+  cursor: pointer;
+}
+
+.button{
+  display: inline-block;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: 700;
+  font-size: medium;
+  color:var(--color-accent-2);
+  background-color: var(--color-accent-1);
+  padding: 1rem 1rem; 
+  border-radius: 14px;
+  transition: opacity 5s;
+  box-shadow: 2px 2px 3px;
+  margin-bottom: 1em;
+}
+
+.button:hover{
+  color: var(--color-accent-1);
+  background-color: var(--color-accent-2);
+  box-shadow: 2px 2px 3px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 45rem;
+}
+
+article, aside{
+  margin-bottom: 1em;
+}
+
+footer{
+  text-align: center;
+  padding: 0 1rem;
+  background-color: var(--color-accent-2);
+  color:white;
+}
