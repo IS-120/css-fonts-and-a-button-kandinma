@@ -131,7 +131,7 @@ a{
   text-decoration: none;
 }
 
-a:hover{
+a[href]:hover{
   color:var(--color-accent-2);
   cursor: pointer;
 }
