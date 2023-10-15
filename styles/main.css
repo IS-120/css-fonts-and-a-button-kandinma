@@ -150,7 +150,7 @@ a[href]:hover{
   margin-bottom: 1em;
 }
 
-.button:hover{
+a.button:hover{
   color: var(--color-accent-1);
   background-color: var(--color-accent-2);
   box-shadow: 2px 2px 3px;
