@@ -93,7 +93,7 @@ img[src$="svg"] {
 
 /************ add your CSS here *****************/
 
-body{
+body {
   font-family: 'Hind', sans-serif;
   color: var(--color-font);
   font-size: 2rem;
@@ -106,37 +106,37 @@ h1,h2,h3,h4{
   margin-top:0.5em;
 }
 
-h1{
+h1 {
   color:var(--color-primary);
   font-size: 6rem;
 }
 
-h2{
+h2 {
   color:var(--color-secondary);
   font-size: 4rem;
 }
 
-h3{
+h3 {
   color:var(--color-accent-1);
   font-size: 3rem;
 }
 
-h4{
+h4 { 
   color:var(--color-accent-2);
   font-size: 2rem;
 }
 
-a{
+a {
   color:var(--color-accent-1);
   text-decoration: none;
 }
 
-a[href]:hover{
+a[href]:hover {
   color:var(--color-accent-2);
   cursor: pointer;
 }
 
-.button{
+.button {
   display: inline-block;
   font-family: 'Goudy Bookletter 1911', serif;
   font-weight: 700;
@@ -150,7 +150,7 @@ a[href]:hover{
   margin-bottom: 1em;
 }
 
-a.button:hover{
+a.button:hover {
   color: var(--color-accent-1);
   background-color: var(--color-accent-2);
   box-shadow: 2px 2px 3px;
@@ -164,11 +164,11 @@ main {
   max-width: 45rem;
 }
 
-article, aside{
+article, aside {
   margin-bottom: 1em;
 }
 
-footer{
+footer {
   text-align: center;
   padding: 0 1rem;
   background-color: var(--color-accent-2);
