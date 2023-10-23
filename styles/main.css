@@ -99,7 +99,7 @@ body {
   font-size: 2rem;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,aside {
   font-family: 'Goudy Bookletter 1911', serif;
   font-weight: 500;
   margin-bottom: 0.5em;
@@ -173,4 +173,8 @@ footer {
   padding: 0 1rem;
   background-color: var(--color-accent-2);
   color:white;
+}
+
+aside {
+  text-align: center;
 }
